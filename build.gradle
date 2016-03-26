@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.11'
+}
+
+sourceSets {
+    main {
+        java { srcDir 'leetcode-java/main' }
+    }
+    test {
+        java { srcDir 'leetcode-java/test' }
+    }
+}
